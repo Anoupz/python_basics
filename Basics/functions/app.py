@@ -15,3 +15,9 @@ def func2(arg1, arg2):
 
 func2(10, 20)
 
+# function that returns a value
+def cube(x):
+    return x*x*x
+
+print(cube(3))
+
