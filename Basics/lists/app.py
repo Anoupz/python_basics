@@ -51,3 +51,27 @@ family2.clear()
 
 # print the list
 print(family)
+
+# list slice [start:stop:step]
+
+colors = ["green", "red", "blue", "yellow", "orange", "purple", "pink"]
+
+green, red, *rest = colors
+
+print(green)  # will print green
+print(red)  # will print red
+print(rest)  # will print ['blue', 'yellow', 'orange', 'purple', 'pink']
+
+
+for color in colors:
+    print(color)  # will print each color in the list
+
+
+for index, color in enumerate(colors):
+    print(f"{index}: {color}")  # will print each color in the list with its index
+
+names = ["max", "tom", "john"]
+print(list(map(lambda name: name.capitalize(), names)))  # will print a map object
+
+# len() returns the length of the list
+print(len(names))  # will print 3
