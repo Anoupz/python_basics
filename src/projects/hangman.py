@@ -37,7 +37,9 @@ def run_game():
 
         if guess not in word:
             tries -= 1
-            print(f"That letter is not in the word. You have {tries} tries left.")
+            print(
+                f"That letter is not in the word. You have {tries} tries left."
+            )
 
             if tries == 0:
                 print("Sorry, you lost. The word was: ", word)

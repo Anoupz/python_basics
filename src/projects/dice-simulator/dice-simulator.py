@@ -16,7 +16,9 @@ def main():
     print("Welcome to the dice simulator!")
     while True:
         try:
-            amount_of_dice: int = int(input("Enter the amount of dice to roll: "))
+            amount_of_dice: int = int(
+                input("Enter the amount of dice to roll: ")
+            )
             dice_rolls: list[int] = roll_dice(amount_of_dice)
             print(*dice_rolls, sep=", ")
         except ValueError:

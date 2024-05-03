@@ -35,7 +35,10 @@ print(family.index("son"))
 print("son" in family)
 
 # count the number of times an item appears in the list
-print("Count the number of times an item appears in the list", family.count("son"))
+print(
+    "Count the number of times an item appears in the list",
+    family.count("son"),
+)
 
 # sort the list
 family.sort()
@@ -68,10 +71,14 @@ for color in colors:
 
 
 for index, color in enumerate(colors):
-    print(f"{index}: {color}")  # will print each color in the list with its index
+    print(
+        f"{index}: {color}"
+    )  # will print each color in the list with its index
 
 names = ["max", "tom", "john"]
-print(list(map(lambda name: name.capitalize(), names)))  # will print a map object
+print(
+    list(map(lambda name: name.capitalize(), names))
+)  # will print a map object
 
 # len() returns the length of the list
 print(len(names))  # will print 3
