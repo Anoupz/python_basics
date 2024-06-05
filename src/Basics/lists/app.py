@@ -57,7 +57,7 @@ print(family)
 
 # list slice [start:stop:step]
 
-colors = ["green", "red", "blue", "yellow", "orange", "purple", "pink"]
+colors: list[str] = ["green", "red", "blue", "yellow", "orange", "purple", "pink"]
 
 green, red, *rest = colors
 
@@ -71,14 +71,10 @@ for color in colors:
 
 
 for index, color in enumerate(colors):
-    print(
-        f"{index}: {color}"
-    )  # will print each color in the list with its index
+    print(f"{index}: {color}")  # will print each color in the list with its index
 
 names = ["max", "tom", "john"]
-print(
-    list(map(lambda name: name.capitalize(), names))
-)  # will print a map object
+print(list(map(lambda name: name.capitalize(), names)))  # will print a map object
 
 # len() returns the length of the list
 print(len(names))  # will print 3
